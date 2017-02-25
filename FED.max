@@ -1,0 +1,14 @@
+FED():=(
+    M:=read("Ingrese M(x,y)")$
+    print("M = ", M)$
+    N:=read("Ingrese N(x,y)")$
+    print("N = ", N)$
+    dM:=diff(M,y)$
+    dN:=diff(N,x)$
+    if dM = dN then
+    F:=integrate(dM,x)$
+    F1:=diff(F,y)$
+    g:=M-F1$
+    g1:=integrate(g,y)$
+    print("K=",F+g1)$
+    )$
