@@ -16,7 +16,6 @@ FED():=(
     
 ---------------------------------------------------------------------------------    
 /* 
-define: argument cannot be an atom or a subscripted memoizing function; found: M
-#0: FED()
- -- an error. To debug this try: debugmode(true);
+y^2 * sin(x);
+(1/x) - (y/x);
  */
