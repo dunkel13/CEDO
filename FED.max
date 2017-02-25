@@ -1,7 +1,7 @@
 FED():=(
-    M:=read("Ingrese M(x,y)"),
+    M:read("Ingrese M(x,y)"),
     print("M = ", M),
-    N:=read("Ingrese N(x,y)"),
+    N:read("Ingrese N(x,y)"),
     print("N = ", N),
     dM:=diff(M,y),
     dN:=diff(N,x),
