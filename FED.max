@@ -1,14 +1,22 @@
 FED():=(
-    M:=read("Ingrese M(x,y)")$
-    print("M = ", M)$
-    N:=read("Ingrese N(x,y)")$
-    print("N = ", N)$
-    dM:=diff(M,y)$
-    dN:=diff(N,x)$
+    M:=read("Ingrese M(x,y)"),
+    print("M = ", M),
+    N:=read("Ingrese N(x,y)"),
+    print("N = ", N),
+    dM:=diff(M,y),
+    dN:=diff(N,x),
     if dM = dN then
-    F:=integrate(dM,x)$
-    F1:=diff(F,y)$
-    g:=M-F1$
-    g1:=integrate(g,y)$
-    print("K=",F+g1)$
+    F:=integrate(dM,x),
+    F1:=diff(F,y),
+    g:=M-F1,
+    g1:=integrate(g,y),
+    print("K=",F+g1)
     )$
+    
+    
+---------------------------------------------------------------------------------    
+/* 
+define: argument cannot be an atom or a subscripted memoizing function; found: M
+#0: FED()
+ -- an error. To debug this try: debugmode(true);
+ */
