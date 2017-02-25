@@ -7,7 +7,8 @@ FED():=(
     dN:diff(N,x),
     if dM = dN then
                 (F:integrate(dM,x) and F1:diff(F,y) and g:M-F1)
-                else print("La ecuación no es exacta")
+                else print("La ecuación no es exacta") and p:1,
+    if p#1 then g1:integrate(g,y) and print("K=",F+g1)    
    )$
     
     
@@ -16,3 +17,8 @@ FED():=(
 y^2 * sin(x);
 (1/x) - (y/x);
  */
+
+/*
+(1/x)+2*(y^2)*x;
+(2*y*x^2 - cos(y));
+*/
