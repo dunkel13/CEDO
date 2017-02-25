@@ -3,15 +3,12 @@ FED():=(
     print("M = ", M),
     N:read("Ingrese N(x,y)"),
     print("N = ", N),
-    dM:=diff(M,y),
-    dN:=diff(N,x),
+    dM:diff(M,y),
+    dN:diff(N,x),
     if dM = dN then
-    F:=integrate(dM,x),
-    F1:=diff(F,y),
-    g:=M-F1,
-    g1:=integrate(g,y),
-    print("K=",F+g1)
-    )$
+                (F:integrate(dM,x) and F1:diff(F,y) and g:M-F1)
+                else print("La ecuación no es exacta")
+   )$
     
     
 ---------------------------------------------------------------------------------    
