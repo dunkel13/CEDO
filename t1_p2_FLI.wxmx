@@ -1,0 +1,23 @@
+FLI(x0,y0):=(
+    a1:read("Ingrese a1(x):"),
+    print("a1 = ", a1),
+    a0:read("Ingrese a0(x):"),
+    print("a0 = ", a0),
+    g:read("Ingrese g(x):"),
+    print("g = ", g),
+    P:(a0/a1),    
+    Q:(g/a1),    
+    kill(x),
+    H:exp(integrate(P,x)),    
+    w:integrate(H*Q,x),    
+    define(y1(x),(w+k)/H),
+    print("y1(x) = ", y1(x)),
+    define(y(x,k),y1(x)),        
+    K:solve(y1(x0)=y0,k),    
+    K1:rhs(K[1]),
+    print("K1 =", K1),
+    print("la solución es: y =",y(x,K1))
+)$
+
+------------------------------------------------------------------------------------
+
