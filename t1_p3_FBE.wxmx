@@ -1,0 +1,19 @@
+FBE(n):=(
+P:read("Ingrese P(x)"),
+print("P =",P),
+Q:read("Ingrese Q(x)"),
+print("Q =",Q),
+u:y^(1-n),
+dx:diff(u,y),
+dy:1/dx,
+a1:dy/y^(n),
+a0:P,
+P:a0/a1,
+Q:Q/a1,
+H:exp(integrate(P,x)),  
+w:integrate(H*Q,x),
+define(u1(x),(w+k)/H),
+print("u1 =",u1(x)),
+define(y(x),u1(x)^(1-n)),
+print("La solución es y = ",ratsimp(y(x)))    
+)$
