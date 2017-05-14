@@ -1,4 +1,4 @@
-1/* La 2da sol l.i. para \lambda=2 y f(x)=x */
+/* La 2da sol l.i. para \lambda=1 y f(x)=x */
 f:1/(x^2 *(1-x^2));
 y:x*(integrate(f,x));
 y1:diff(y,x);
