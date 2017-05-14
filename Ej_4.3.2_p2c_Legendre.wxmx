@@ -1,11 +1,7 @@
+/* La 2da sol l.i. para \lambda=3 y f(x)=5x^3-3x */
 f:1/((5*x^3 -3*x)^2 *(1-x^2));
-
 y:(5*x^3 -3*x)*(integrate(f,x));
-
 y1:diff(y,x);
-
 y2:diff(y1,x);
-
 a:((y2)-(2*x*(1/(1-x^2))*(y1))+(12*1/(1-x^2)*(y)));
-
 ratsimp(a);
